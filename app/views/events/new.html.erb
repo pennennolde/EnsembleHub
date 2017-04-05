@@ -1,0 +1,11 @@
+<h2>Event 新規作成</h2>
+
+
+<%= form_tag('/events', method: :post) do %>
+  <input placeholder="year" type="text" name="year"><br>
+  <input placeholder="month" type="text" name="month"><br>
+  <input placeholder="date" type="text" name="date"><br>
+  <input placeholder="event name" type="text" name="event"><br>
+  <input placeholder="担当者" type="text" name="name"><br>
+  <input type="submit" value="SENT">
+<% end %>
