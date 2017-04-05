@@ -2,10 +2,11 @@
 
 
 <%= form_tag('/events', method: :post) do %>
-  <input placeholder="year" type="text" name="year"><br>
-  <input placeholder="month" type="text" name="month"><br>
-  <input placeholder="date" type="text" name="date"><br>
+  <input placeholder="year" type="integer" name="year"><br>
+  <input placeholder="month" type="integer" name="month"><br>
+  <input placeholder="date" type="integer" name="date"><br>
   <input placeholder="event name" type="text" name="event"><br>
-  <input placeholder="担当者" type="text" name="name"><br>
+  <input placeholder="place" type="text" name="place"><br>
+  <input placeholder="担当者" type="string" name="name"><br>
   <input type="submit" value="SENT">
 <% end %>
