@@ -1,3 +1,8 @@
 <h2>Evevts</h2>
-<%= link_to 'Event新規作成', "/events/new", method: :get %>
+<%= link_to 'Event新規作成', "/events/new", method: :get %><br>
 
+<% if @events != nil %>
+	<% @events.each do |event| %>
+		<%= event.event %> 
+	<% end %>
+<% end %>
