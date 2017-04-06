@@ -2,9 +2,10 @@
 <h3><%= link_to '新規エントリー', "/programs/new/#{@event.id}", method: :get %></h3><br>
 
 <% if @programs != nil %>
+	<h4>Program</h4>
 	<% @programs.each do |program| %>
-		・<p>probram.group</p><br>
+		・<%= program.group %><br>
 	<% end %>
 <% else %>
-	<p>プログラムはまだありません。</p>
+	<p>Programはまだありません。</p>
 <% end %>
