@@ -1,0 +1,13 @@
+<h2><%= @event.event %></h2>
+<h2>新規エントリー</h2>
+
+
+<%= form_tag("/programs/new/#{@event.id}", method: :post) do %>
+  <input placeholder="グループ名" type="strig" name="group"><br>
+  <input placeholder="作曲者" type="string" name="composer"><br>
+  <input placeholder="編曲者" type="string" name="arranger"><br>
+  <input placeholder="曲名" type="string" name="music"><br>
+  <textarea cols="30" rows="2" placeholder="補足（楽章など）" name="attention"></textarea><br>
+  <textarea cols="30" rows="10" placeholder="コメント" name="comment"></textarea><br>
+  <input type="submit" value="SENT">
+<% end %>

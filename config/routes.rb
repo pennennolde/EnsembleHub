@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get "/events/:id" => 'programs#index'
 
+  get "/programs/new/:id" => 'programs#new'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

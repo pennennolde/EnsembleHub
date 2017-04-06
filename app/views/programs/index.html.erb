@@ -1,8 +1,9 @@
-<h2><%= @event %></h2>
+<h2><%= @event.event %></h2>
+<h3><%= link_to '新規エントリー', "/programs/new/#{@event.id}", method: :get %></h3><br>
 
 <% if @programs != nil %>
 	<% @programs.each do |program| %>
-		<p>probram.group</p><br>
+		・<p>probram.group</p><br>
 	<% end %>
 <% else %>
 	<p>プログラムはまだありません。</p>
