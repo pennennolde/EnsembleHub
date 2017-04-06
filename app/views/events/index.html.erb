@@ -3,7 +3,7 @@
 
 <% if @events != nil %>
 	<% @events.each do |event| %>
-		<%= link_to event.event, "/events/#{event.id}", method: :get %><br>
+		・<%= link_to event.event, "/events/#{event.id}", method: :get %><br>
 	<% end %>
 <% else %>
 	<p>イベントはまだありません。</p>

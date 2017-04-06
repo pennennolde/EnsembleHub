@@ -1,0 +1,9 @@
+<h2><%= @event %></h2>
+
+<% if @programs != nil %>
+	<% @programs.each do |program| %>
+		<p>probram.group</p><br>
+	<% end %>
+<% else %>
+	<p>プログラムはまだありません。</p>
+<% end %>
