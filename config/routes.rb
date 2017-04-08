@@ -9,11 +9,13 @@ Rails.application.routes.draw do
 
   post 'events' => 'events#create'
 
-  get "/events/:id" => 'programs#index'
+  get "events/:id" => 'programs#index'
 
-  get "/programs/new/:id" => 'programs#new'
+  get "programs/new/:id" => 'programs#new'
 
-  post "/programs/new/:id" => 'programs#create'
+  post "programs/new/:id" => 'programs#create'
+
+  get "programs/:id" => 'programs#show'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

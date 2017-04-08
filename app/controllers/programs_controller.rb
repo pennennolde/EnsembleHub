@@ -14,6 +14,11 @@ class ProgramsController < ApplicationController
 		@event_id = program_params[:id]
 	end
 
+	def show
+		@program = Program.find(params[:id])
+		@event = @program.event
+	end
+
 
 	private
 	def program_params

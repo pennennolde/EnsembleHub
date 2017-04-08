@@ -4,8 +4,10 @@
 <% if @programs != nil %>
 	<h4>Program</h4>
 	<% @programs.each do |program| %>
-		・<%= program.group %><br>
+		・<%= link_to program.group, "/programs/#{program.id}", method: :get %><br>
 	<% end %>
 <% else %>
 	<p>Programはまだありません。</p>
 <% end %>
+
+<h3><%= link_to 'Event一覧へ戻る', '/events', method: :get %></h3><br>
