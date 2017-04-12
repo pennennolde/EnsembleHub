@@ -2,7 +2,7 @@ class EventsController < ApplicationController
 
 
 	def index
-		@events = Event.all
+		@events = Event.all.order("created_at DESC")
 	end
 
 	def new
@@ -14,8 +14,8 @@ class EventsController < ApplicationController
 
 
 	private
-  def event_params
+  	def event_params
     params.permit(:year, :month, :date, :event, :place, :name)
-  end
+  	end
 
 end

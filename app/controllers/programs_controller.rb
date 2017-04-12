@@ -2,7 +2,7 @@ class ProgramsController < ApplicationController
 
 	def index
 		@event = Event.find(params[:id])
-		@programs = @event.programs
+		@programs = @event.programs.order("created_at DESC")
 	end
 
 	def new
