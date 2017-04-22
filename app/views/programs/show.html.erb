@@ -1,8 +1,8 @@
 <h2><%= @event.event %></h2>
 
-<p>グループ名：　<%= @program.group %></p>
-<p>曲目： <%= @program.music %>　（作曲：　<%= @program.composer %>　編曲：　<%= @program.arranger %>）</p>
-<p>曲詳細：　<%= @program.attention %></p>
-<p>コメント：　<%= @program.comment %></p>
+<p>グループ名： <%= @program.group %></p>
+<p>曲目： <%= @program.music %>　（作曲：<%= @program.composer %>　編曲：<%= @program.arranger %>）</p>
+<p>曲詳細： <%= @program.attention %></p>
+<p>コメント： <%= @program.comment %></p>
 
 <h3><%= link_to 'Program一覧へ戻る', "/events/#{@event.id}", method: :get %></h3><br>
