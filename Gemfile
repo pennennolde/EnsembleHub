@@ -47,7 +47,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'pry-rails'
-gem 'compass-rails', '~> 2.0'
-gem 'sprockets', '3.7.1'
+gem 'compass-rails', '~> 2.0.4'
+gem 'sprockets', '2.11.0'
 
 gem 'coffee-script-source', '1.8.0'

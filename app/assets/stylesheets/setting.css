@@ -10,13 +10,40 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
-header {
+.header {
   background-color: gray;
 }
 
 .heading {
-  height: 100px;
-  width: 960px;
+  /*height: 70px;*/
+  /*width: 960px;*/
   background-color: #CCCCCC;
   margin: 0 auto;
 }
+
+.title {
+  padding: 15px 0 10px;
+  text-align: center;
+}
+
+.navibar {
+  margin: 0 auto;
+  background-color: white;
+}
+
+.comment {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+
+
+
+/*.event-list {
+  background-color: red;
+}*/
