@@ -1,12 +1,15 @@
 <!-- <div class="eventlist"> -->
-	<h2>イベント一覧</h2>
-	<h3><%= link_to 'イベント新規作成', '/events/new', method: :get %></h3><br>
+	<h2 class="event-index">イベント一覧</h2>
 
 	<% if @events != nil %>
 		<% @events.each do |event| %>
-			・<%= link_to event.event, "/events/#{event.id}", method: :get %>　担当者：<%=event.name%><br>
+			<div class="event">
+				<%= link_to event.event, "/events/#{event.id}", method: :get %>　担当者：<%=event.name%><br>
+			</div>
 		<% end %>
 	<% else %>
 		<p>イベントはまだありません。</p>
 	<% end %>
+
+	<h3 class="event-new"><%= link_to 'イベント新規作成', '/events/new', method: :get %></h3>
 <!-- </div> -->

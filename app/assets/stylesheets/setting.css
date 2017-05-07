@@ -24,6 +24,7 @@ h1,h2,h3,h4,h5,h6,p {
 .title {
   padding: 15px 0 10px;
   text-align: center;
+  font-family: fantasy;
 }
 
 .navibar {
@@ -33,6 +34,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .comment {
   text-align: center;
+  padding: 5px 0;
 }
 
 .footer {
@@ -42,6 +44,23 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 
+.event-index {
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px 50px 0;
+}
+
+.event {
+  width: 500px;
+  margin: 5px auto;
+  padding: 10px 30px;
+  background-color: #CCCCCC;
+}
+
+.event-new {
+  text-align: center;
+  margin: 20px auto;
+}
 
 
 /*.event-list {
